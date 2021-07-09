@@ -5,12 +5,11 @@ const miss = require('mississippi')
 const split2 = require('split2')
 
 class HttpBinClient {
-    constructor({ baseURL = 'https://httpbin.org' } = {}) {
-        this.axios =  axios.create({
-            baseURL,
-            timeout: 1000,
-            headers: {'X-Custom-Header': 'foobar'}
-        })
+    constructor(axiosOptions = {}) {
+        if (!axiosOptions.baseURL) {
+            axiosOptions.baseURL = 'https://httpbin.org'
+        }
+        this.axios =  axios.create(axiosOptions)
     }
 
     async invokeGet() {
