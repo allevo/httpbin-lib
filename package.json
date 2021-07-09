@@ -1,0 +1,24 @@
+{
+  "name": "httpbin-lib",
+  "version": "0.1.0",
+  "description": "Lib for httpbin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allevo/httpbin-lib.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allevo/httpbin-lib/issues"
+  },
+  "homepage": "https://github.com/allevo/httpbin-lib#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "mississippi": "^4.0.0",
+    "split2": "^3.2.2"
+  }
+}

@@ -1,18 +1,6 @@
-# httpbin-lib
-Lib for [httpbin](https://httpbin.org/)
-
-## Install
-
-```
-npm i httpbin-lib
-```
-
-## Example
-
-```js
 'use strict'
 
-const HttpBinClient = require('httpbin-lib')
+const HttpBinClient = require('./index')
 
 const client = new HttpBinClient()
 
@@ -24,8 +12,3 @@ client.invokeStream(10)
     .then(s => {
         s.on('data', d => console.log(d))
     })
-```
-
-## License
-
-MIT
